@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical"
+     >
+
+  <GridLayout
+      android:id="@+id/root2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:columnCount="3"
+      android:rowCount="2" 
+      android:layout_weight="1">
+    
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="98dp"
+        android:layout_height="68dp"
+        android:layout_rowSpan="2"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="@color/white"
+        android:background="@drawable/b1"
+        android:textSize="6pt" />
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/black"
+        android:ems="10"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="支出（元）"
+        android:textColor="@color/white"
+        android:textSize="6pt" />
+
+    <!-- ems=10表示控件显示的字符长度为10，超出部分不显示 --> 
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/black"
+        android:ems="10"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="收入（元）"
+        android:textColor="@color/white"
+        android:textSize="6pt" />
+
+    <TextView
+        android:id="@+id/expense"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:background="@color/black"
+        android:ems="10"
+        android:gravity="center"
+        android:singleLine="true"
+        
+        android:textColor="@color/white"
+        android:textSize="6pt" />
+
+    <TextView
+        android:id="@+id/salery"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_gravity="fill_horizontal"
+        android:ems="10"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:text="700"
+        android:textSize="6pt" />
+    </GridLayout>
+    
+       <ListView
+           android:id="@+id/simple_list"
+           android:layout_width="fill_parent"
+           android:layout_height="340dp"
+           
+           android:divider="@color/red"
+           android:dividerHeight="2px"
+           android:footerDividersEnabled="true"
+           android:headerDividersEnabled="false"
+           android:transcriptMode="alwaysScroll" 
+           android:layout_weight="8">
+           </ListView>
+
+       <Button
+         android:id="@+id/add"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/title_background"
+         android:text="记账"
+         android:textSize="15pt"
+         android:textColor="@color/white"
+         android:layout_weight="1"/>
+    
+   </LinearLayout>
